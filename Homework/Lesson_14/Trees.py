@@ -68,9 +68,7 @@ class Tree:
 			self.id_node = right_min_node.id_node
 			if right_min_node.right is None:
 				right_min_node.__remove_leaf()
-			else:  # If self.right.find_min_node().right
-				# Possibly could be done with just:
-				# right_min_node = right_min_node.right
+			else:  # If right_min_node.right
 				right_min_node.__remove_right_child_node()
 		elif self.left and self.right is None:
 			self.__remove_left_child_node()

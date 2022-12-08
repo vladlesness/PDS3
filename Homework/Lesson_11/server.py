@@ -14,6 +14,6 @@ while True:
     data = conn.recv(1024)
     decoded_data = data.decode('utf-8')
     print(decoded_data)
-    message = messages[decoded_data] + '\n' + f'The amount of words in your phrase is {len(decoded_data.split())}'
+    message = messages[decoded_data.lower()] + '\n' + f'The amount of words in your phrase is {len(decoded_data.split())}'
     conn.send(bytes(message, encoding='UTF-8'))
-conn.close()
+    conn.close()
