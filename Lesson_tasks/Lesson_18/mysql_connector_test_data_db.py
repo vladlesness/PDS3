@@ -27,3 +27,4 @@ values = [
 
 cursor.executemany(sql, values)
 test_db.commit()
+test_db.close()
