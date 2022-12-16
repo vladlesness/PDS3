@@ -3,7 +3,7 @@ from networkx import shortest_path, shortest_path_length, Graph
 
 def shortest_path_and_length(g, start_node, target_node):
 	w = 'weight'
-	return f'Path: {shortest_path(g, start_node, target_node, weight=w)}',\
+	return f'Path: {shortest_path(g, start_node, target_node, weight=w)}\n' \
 		   f'Length: {shortest_path_length(g, start_node, target_node, weight=w)}'
 
 
