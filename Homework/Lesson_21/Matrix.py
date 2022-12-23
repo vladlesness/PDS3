@@ -125,30 +125,6 @@ class Matrix:
 		# Transpose a matrix
 		return Matrix([[self[j][i] for j in range(self[i].len)] for i in range(self.m)])
 
-m1 = Matrix([[1, 2, 3],
-			 [5, 2, 3],
-			 [-9, 19, -12]])
-m2 = Matrix([[5, 3, 0],
-			 [10, 11, -6],
-			 [-5, 6, 17]])
-# print(m1)
-# print(m1[0])
-# print(type(m1))
-# print(type(m1[0]))
-# print(m1[0][1])
-# print(m1[0] + m1[1])
-# print(m1.size)
-# print(m1 + m2)
-# print(m2 - m1)
-# print(m1 - 1)
-# print()
-# print(m1 * m2)
-# print()
-# print(m1 * 2)
-# print(m1.transposed())
-# print()
-# print(m1 * Matrix([[5, 3, 0],
-# 				   [10, 11, -6]]))
 
 m = Matrix([[4, 2, 0],
 			[1, 3, 2],
